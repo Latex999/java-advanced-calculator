@@ -1,0 +1,231 @@
+/* Main application styles */
+.root {
+    -fx-font-family: 'Segoe UI', Arial, sans-serif;
+    -fx-background-color: #f5f5f5;
+}
+
+/* Display field styles */
+.text-field {
+    -fx-background-color: white;
+    -fx-background-radius: 5;
+    -fx-border-color: #e0e0e0;
+    -fx-border-radius: 5;
+    -fx-padding: 10;
+}
+
+/* Button styles */
+.button {
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+    -fx-font-size: 16px;
+    -fx-padding: 10 15;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 2, 0, 0, 1);
+}
+
+.button:hover {
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 4, 0, 0, 2);
+}
+
+.button:pressed {
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 1, 0, 0, 0);
+    -fx-translate-y: 1px;
+}
+
+/* Number button styles */
+.number-button {
+    -fx-background-color: white;
+    -fx-text-fill: #333333;
+}
+
+.number-button:hover {
+    -fx-background-color: #f0f0f0;
+}
+
+/* Operator button styles */
+.operator-button {
+    -fx-background-color: #f0f0f0;
+    -fx-text-fill: #333333;
+}
+
+.operator-button:hover {
+    -fx-background-color: #e0e0e0;
+}
+
+/* Equals button styles */
+.equals-button {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+}
+
+.equals-button:hover {
+    -fx-background-color: #43A047;
+}
+
+/* Clear button styles */
+.clear-button {
+    -fx-background-color: #f44336;
+    -fx-text-fill: white;
+}
+
+.clear-button:hover {
+    -fx-background-color: #e53935;
+}
+
+/* Memory button styles */
+.memory-button {
+    -fx-background-color: #2196F3;
+    -fx-text-fill: white;
+}
+
+.memory-button:hover {
+    -fx-background-color: #1E88E5;
+}
+
+/* Function button styles */
+.function-button {
+    -fx-background-color: #9C27B0;
+    -fx-text-fill: white;
+}
+
+.function-button:hover {
+    -fx-background-color: #8E24AA;
+}
+
+/* Tab pane styles */
+.tab-pane {
+    -fx-tab-min-width: 100px;
+}
+
+.tab {
+    -fx-background-color: #f0f0f0;
+    -fx-padding: 5 15;
+}
+
+.tab:selected {
+    -fx-background-color: white;
+}
+
+.tab-pane > .tab-header-area > .headers-region > .tab:selected > .tab-container > .tab-label {
+    -fx-font-weight: bold;
+}
+
+/* History panel styles */
+.history-panel {
+    -fx-background-color: white;
+    -fx-background-radius: 5;
+    -fx-border-color: #e0e0e0;
+    -fx-border-radius: 5;
+}
+
+.history-entry {
+    -fx-padding: 8;
+    -fx-border-color: #e0e0e0;
+    -fx-border-radius: 3;
+    -fx-background-radius: 3;
+    -fx-cursor: hand;
+}
+
+.history-entry:hover {
+    -fx-background-color: #f5f5f5;
+}
+
+/* Dark mode styles */
+.dark-mode {
+    -fx-background-color: #2d2d2d;
+}
+
+.dark-mode .text-field {
+    -fx-background-color: #3d3d3d;
+    -fx-text-fill: white;
+    -fx-border-color: #555555;
+}
+
+.dark-mode .button {
+    -fx-background-color: #444444;
+    -fx-text-fill: white;
+}
+
+.dark-mode .number-button {
+    -fx-background-color: #555555;
+    -fx-text-fill: white;
+}
+
+.dark-mode .number-button:hover {
+    -fx-background-color: #666666;
+}
+
+.dark-mode .operator-button {
+    -fx-background-color: #444444;
+    -fx-text-fill: white;
+}
+
+.dark-mode .operator-button:hover {
+    -fx-background-color: #555555;
+}
+
+.dark-mode .tab {
+    -fx-background-color: #444444;
+    -fx-text-fill: white;
+}
+
+.dark-mode .tab:selected {
+    -fx-background-color: #555555;
+}
+
+.dark-mode .history-panel {
+    -fx-background-color: #3d3d3d;
+    -fx-border-color: #555555;
+}
+
+.dark-mode .history-entry {
+    -fx-border-color: #555555;
+    -fx-text-fill: white;
+}
+
+.dark-mode .history-entry:hover {
+    -fx-background-color: #444444;
+}
+
+/* Menu styles */
+.menu-bar {
+    -fx-background-color: #f0f0f0;
+}
+
+.dark-mode .menu-bar {
+    -fx-background-color: #444444;
+}
+
+.dark-mode .menu-item {
+    -fx-background-color: #3d3d3d;
+}
+
+.dark-mode .menu-item .label {
+    -fx-text-fill: white;
+}
+
+.dark-mode .menu-item:focused {
+    -fx-background-color: #555555;
+}
+
+/* Scroll pane styles */
+.scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar:vertical {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #c0c0c0;
+    -fx-background-radius: 5;
+}
+
+.dark-mode .scroll-bar:vertical .thumb {
+    -fx-background-color: #666666;
+}
